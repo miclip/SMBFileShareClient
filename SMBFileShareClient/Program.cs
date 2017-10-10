@@ -16,7 +16,7 @@ namespace SMBFileShareClient
                 {
                     Console.WriteLine("Connecting to network resource...");
 
-                    var ret = NetResource.CopyFile("SMBFileShareClient.pdb", @"\\10.0.0.31\mike", @"PHATGOCODE\FileRepositoryUser", "^Slinky4$");
+                    var ret = NetResource.CopyFile("SMBFileShareClient.pdb", @"\\10.0.0.31\mike", @"DOMAIN\XXX", "XXXXX");
                     if (ret != null)
                     {
                         Console.Error.WriteLine("Error returned: " + ret);
