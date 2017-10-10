@@ -1,0 +1,10 @@
+﻿---
+applications:
+- name: smbfileshareclient
+  no-route: true
+  memory: 512m
+  stack: windows2012R2
+  path: \bin\Debug
+  buildpack: binary_buildpack
+  command: SMBFileShareClient.exe
+  health-check-type: none 
